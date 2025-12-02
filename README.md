@@ -18,7 +18,7 @@ Esta solução foi desenvolvida como parte de um desafio técnico da Avanade, e 
 - Backend: C#, .NET, microsserviços, API Gateway, Docker, Docker Compose.  
 - Banco de dados: PostgreSQL.  
 - Mensageria / comunicação entre serviços: RabbitMQ (ou similar — conforme configuração).  
-- Frontend: Next.js, TailwindCSS, Shadcn-UI (ou similar), Axios (ou outro cliente HTTP), etc.  
+- Frontend: Next.js, TailwindCSS, Shadcn-UI, Axios, etc.  
 - Autenticação: JWT (JSON Web Tokens).  
 - Infraestrutura / containerização: Docker, Docker Compose.  
 
