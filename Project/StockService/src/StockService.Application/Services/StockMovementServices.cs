@@ -21,9 +21,29 @@ namespace StockService.Application.Services
             return await this.stockRepository.FindBy(predicate);
         }
 
+        public async Task<List<StockMovement>> GetAllByOrderId(long orderId)
+        {
+            return await this.stockRepository.GetAllByOrderId(orderId);
+        }
+
         public async Task<StockMovement> GetById(long Id)
         {
             return await this.stockRepository.GetById(Id);
+        }
+
+        public async Task<List<StockMovement>> GetByIds(List<long> ids)
+        {
+            return await this.stockRepository.GetByIds(ids);
+        }
+
+        public async Task<StockMovement> GetByOrderId(long orderId)
+        {
+            return await this.stockRepository.GetByOrderId(orderId);
+        }
+
+        public async Task<int> GetQuantity()
+        {
+            return await this.stockRepository.GetQuantity();
         }
 
         public async Task<List<StockMovement>> List()
@@ -31,7 +51,7 @@ namespace StockService.Application.Services
             return await this.stockRepository.List();
         }
 
-        public async Task<List<StockMovement>> List(int? page)
+        public async Task<List<StockMovement>> List(int page)
         {
             return await this.stockRepository.List(page);
         }

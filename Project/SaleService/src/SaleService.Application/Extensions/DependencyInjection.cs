@@ -1,6 +1,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using SaleService.Application.Interfaces;
 using SaleService.Application.Services;
+using SaleService.Domain.Entities;
 
 namespace SaleService.Application.Extensions
 {

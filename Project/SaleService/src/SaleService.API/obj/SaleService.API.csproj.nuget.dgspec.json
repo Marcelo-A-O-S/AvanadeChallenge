@@ -28,6 +28,9 @@
             "projectReferences": {
               "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Application\\SaleService.Application.csproj": {
                 "projectPath": "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Application\\SaleService.Application.csproj"
+              },
+              "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Infrastructure\\SaleService.Infrastructure.csproj": {
+                "projectPath": "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Infrastructure\\SaleService.Infrastructure.csproj"
               }
             }
           }
@@ -47,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.19, )"
@@ -54,6 +61,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[8.1.4, )"
             }
           },
           "imports": [
@@ -122,9 +133,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+            "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -185,6 +204,123 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Infrastructure\\SaleService.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Infrastructure\\SaleService.Infrastructure.csproj",
+        "projectName": "SaleService.Infrastructure",
+        "projectPath": "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Infrastructure\\SaleService.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+        "outputPath": "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Application\\SaleService.Application.csproj": {
+                "projectPath": "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Application\\SaleService.Application.csproj"
+              },
+              "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Domain\\SaleService.Domain.csproj": {
+                "projectPath": "D:\\Projetos\\trilha-net-desafio-tecnico\\Project\\SaleService\\src\\SaleService.Domain\\SaleService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[7.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

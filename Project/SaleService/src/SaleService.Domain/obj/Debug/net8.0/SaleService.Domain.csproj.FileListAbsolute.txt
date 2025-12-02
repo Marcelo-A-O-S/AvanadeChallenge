@@ -1,0 +1,12 @@
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\bin\Debug\net8.0\SaleService.Domain.deps.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\bin\Debug\net8.0\SaleService.Domain.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\bin\Debug\net8.0\SaleService.Domain.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\obj\Debug\net8.0\SaleService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\obj\Debug\net8.0\SaleService.Domain.AssemblyInfoInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\obj\Debug\net8.0\SaleService.Domain.AssemblyInfo.cs
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\obj\Debug\net8.0\SaleService.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\obj\Debug\net8.0\SaleService.Domain.sourcelink.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\obj\Debug\net8.0\SaleService.Domain.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\obj\Debug\net8.0\refint\SaleService.Domain.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\obj\Debug\net8.0\SaleService.Domain.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Domain\obj\Debug\net8.0\ref\SaleService.Domain.dll

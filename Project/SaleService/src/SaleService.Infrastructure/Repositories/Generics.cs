@@ -17,12 +17,17 @@ namespace SaleService.Infrastructure.Repositories
             await this.context.SaveChangesAsync();
         }
 
+        public async Task<List<T>> FindAllBy(Expression<Func<T, bool>> predicate)
+        {
+            return await this.context.Set<T>().Where(predicate).ToListAsync();
+        }
+
         public async Task<T> FindBy(Expression<Func<T, bool>> predicate)
         {
             return await this.context.Set<T>().Where(predicate).FirstOrDefaultAsync();
         }
 
-        public async Task<T> GetById(int Id)
+        public async Task<T> GetById(long Id)
         {
             return await this.context.Set<T>().FindAsync(Id);
         }
@@ -32,15 +37,13 @@ namespace SaleService.Infrastructure.Repositories
             return await this.context.Set<T>().ToListAsync();
         }
 
-        public async Task<List<T>> List(int? page)
+        public async Task<List<T>> List(int page = 1, int itemsPage = 10)
         {
             var query = this.context.Set<T>().AsQueryable();
-            var itemsPage = 10;
-            if (page != null)
-            {
-                query = query.Skip(((int)page) * 10).Take(itemsPage);
-            }
-            return await query.ToListAsync();
+            var items = await query.Skip((page - 1) * itemsPage)
+            .Take(itemsPage)
+            .ToListAsync();
+            return items;
         }
 
         public async Task Save(T entity)

@@ -1,0 +1,16 @@
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\bin\Debug\net8.0\AuthService.Application.deps.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\bin\Debug\net8.0\AuthService.Application.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\bin\Debug\net8.0\AuthService.Application.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\bin\Debug\net8.0\AuthService.Domain.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\bin\Debug\net8.0\AuthService.Domain.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.csproj.AssemblyReference.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.AssemblyInfoInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.AssemblyInfo.cs
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.csproj.CoreCompileInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.sourcelink.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\AuthServ.67992DEE.Up2Date
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\refint\AuthService.Application.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\AuthService\src\AuthService.Application\obj\Debug\net8.0\ref\AuthService.Application.dll

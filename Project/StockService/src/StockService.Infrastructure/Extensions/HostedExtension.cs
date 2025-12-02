@@ -1,5 +1,5 @@
 using Microsoft.Extensions.DependencyInjection;
-using StockService.Infrastructure.Consumers;
+using StockService.Infrastructure.Messaging.Consumers;
 
 namespace StockService.Infrastructure.Extensions
 {

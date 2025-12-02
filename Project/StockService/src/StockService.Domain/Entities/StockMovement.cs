@@ -9,6 +9,7 @@ namespace StockService.Domain.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
         public long? OrderId { get; set; }
+        public long? SaleId { get; set; }
         public long ProductId { get; set; }
         public int Quantity { get; set; }
         public TypeMovement Type { get; set; }

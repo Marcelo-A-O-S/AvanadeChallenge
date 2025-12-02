@@ -1,0 +1,16 @@
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\bin\Debug\net8.0\SaleService.Application.deps.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\bin\Debug\net8.0\SaleService.Application.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\bin\Debug\net8.0\SaleService.Application.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\bin\Debug\net8.0\SaleService.Domain.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\bin\Debug\net8.0\SaleService.Domain.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\SaleService.Application.csproj.AssemblyReference.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\SaleService.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\SaleService.Application.AssemblyInfoInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\SaleService.Application.AssemblyInfo.cs
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\SaleService.Application.csproj.CoreCompileInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\SaleService.Application.sourcelink.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\SaleServ.D5FF3571.Up2Date
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\SaleService.Application.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\refint\SaleService.Application.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\SaleService.Application.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\SaleService\src\SaleService.Application\obj\Debug\net8.0\ref\SaleService.Application.dll

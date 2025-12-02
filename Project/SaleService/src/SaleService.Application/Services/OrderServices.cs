@@ -17,9 +17,19 @@ namespace SaleService.Application.Services
             await this.orderRepository.Delete(entity);
         }
 
+        public async Task<List<Order>> FindAllBy(Expression<Func<Order, bool>> predicate)
+        {
+            return await this.orderRepository.FindAllBy(predicate);
+        }
+
         public async Task<Order> FindBy(Expression<Func<Order, bool>> predicate)
         {
             return await this.orderRepository.FindBy(predicate);
+        }
+
+        public async Task<List<Order>> GetAllByUserId(long userId, int page = 1, int itemsPage = 10)
+        {
+            return await this.orderRepository.GetAllByUserId(userId, page, itemsPage);
         }
 
         public async Task<Order> GetById(int Id)
@@ -27,12 +37,22 @@ namespace SaleService.Application.Services
             return await this.orderRepository.GetById(Id);
         }
 
+        public async Task<int> GetQuantity()
+        {
+            return await this.orderRepository.GetQuantity();
+        }
+
+        public async Task<int> GetQuantityByUserId(long userId)
+        {
+            return await this.orderRepository.GetQuantityByUserId(userId);
+        }
+
         public async Task<List<Order>> List()
         {
             return await this.orderRepository.List();
         }
 
-        public async Task<List<Order>> List(int? page)
+        public async Task<List<Order>> List(int page)
         {
             return await this.orderRepository.List(page);
         }

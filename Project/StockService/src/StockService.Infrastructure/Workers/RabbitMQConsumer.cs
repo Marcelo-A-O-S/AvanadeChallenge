@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
@@ -30,7 +31,7 @@ namespace StockService.Infrastructure.Workers
                         exclusive: false,
                         autoDelete: false
                         );
-                    await channel.QueueBindAsync(queue: queueName, exchange: eventName, routingKey: eventName);
+                    await channel.QueueBindAsync(queue: queueName, exchange: eventName, routingKey: "");
                     var consumer = new AsyncEventingBasicConsumer(channel);
                     consumer.ReceivedAsync += async (_, ea) =>
                     {

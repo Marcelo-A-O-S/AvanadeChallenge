@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using SaleService.Domain.Enums;
 namespace SaleService.Domain.Entities
 {
     public class Order
@@ -8,17 +9,9 @@ namespace SaleService.Domain.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long Id { get; set; }
         public long UserId { get; set; }
-        public DateTime CreatedAt { get; init; }
-        public DateTime UpdatedAt { get; private set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
         public List<Sale> Sales { get; set; }
-        public bool IsCanceled { get; set; }
-        public void Cancel()
-        {
-            if (this.IsCanceled)
-                throw new Exception("O pedido já foi cancelado.");
-
-            this.IsCanceled = true;
-            this.UpdatedAt = DateTime.UtcNow;
-        }
+        public OrderStatus Status { get; set; }
     }
 }

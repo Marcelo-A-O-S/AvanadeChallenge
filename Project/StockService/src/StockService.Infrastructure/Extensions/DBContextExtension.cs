@@ -10,9 +10,14 @@ namespace StockService.Infrastructure.Extensions
             this IServiceCollection services, IConfiguration configuration
         )
         {
+            var connectionString = configuration.GetConnectionString("ConnectionString");
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                throw new InvalidOperationException("ConnectionString não configurada.");
+            }
             services.AddDbContext<DBContext>(options =>
             {
-                options.UseNpgsql("");
+                options.UseNpgsql(connectionString);
             });
             return services;
         }

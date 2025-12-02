@@ -1,0 +1,12 @@
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\bin\Debug\net8.0\StockService.Domain.deps.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\bin\Debug\net8.0\StockService.Domain.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\bin\Debug\net8.0\StockService.Domain.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\obj\Debug\net8.0\StockService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\obj\Debug\net8.0\StockService.Domain.AssemblyInfoInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\obj\Debug\net8.0\StockService.Domain.AssemblyInfo.cs
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\obj\Debug\net8.0\StockService.Domain.csproj.CoreCompileInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\obj\Debug\net8.0\StockService.Domain.sourcelink.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\obj\Debug\net8.0\StockService.Domain.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\obj\Debug\net8.0\refint\StockService.Domain.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\obj\Debug\net8.0\StockService.Domain.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Domain\obj\Debug\net8.0\ref\StockService.Domain.dll

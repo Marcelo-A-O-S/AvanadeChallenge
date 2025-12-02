@@ -19,18 +19,36 @@ namespace StockService.Domain.Entities
             if (quantity <= 0)
                 throw new Exception("Quantidade informada inválida.");
             switch (typeMovement)
-                {
-                    case TypeMovement.Input:
-                        Quantity += quantity;
-                        break;
-                    case TypeMovement.Output:
-                        if (Quantity < quantity)
-                            throw new Exception("Estoque insuficiente para realizar a saída.");
-                        Quantity -= quantity;
-                        break;
-                    default:
-                        throw new Exception("Tipo de movimentação inválido.");
-                }
+            {
+                case TypeMovement.Input:
+                    Quantity += quantity;
+                    break;
+                case TypeMovement.Output:
+                    if (Quantity < quantity)
+                        throw new Exception("Estoque insuficiente para realizar a saída.");
+                    Quantity -= quantity;
+                    break;
+                default:
+                    throw new Exception("Tipo de movimentação inválido.");
+            }
+        }
+        public void AmountReversal(int quantityMovement, TypeMovement typeMovement)
+        {
+            if (quantityMovement <= 0)
+                throw new Exception("Quantidade informada inválida");
+            switch (typeMovement)
+            {
+                case TypeMovement.Input:
+                    if (Quantity < quantityMovement)
+                        throw new Exception("Não é possivel realizar o estorno.");
+                    Quantity -= quantityMovement;
+                    break;
+                case TypeMovement.Output:
+                    Quantity += quantityMovement;
+                    break;
+                default:
+                    throw new Exception("Tipo de movimentação inválido.");  
+            }
         }
     }
 }

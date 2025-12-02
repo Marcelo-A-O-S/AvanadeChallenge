@@ -26,3 +26,9 @@ StockService/src/StockService.Application/bin
 StockService/src/StockService.Domain/bin
 StockService/src/StockService.Infrastructure/bin
 
+.vscode/
+DBStock/
+DBSale/
+DBUser/
+RabbitMQ/
+Tools/

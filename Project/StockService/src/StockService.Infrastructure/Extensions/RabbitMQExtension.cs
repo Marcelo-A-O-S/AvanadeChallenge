@@ -10,11 +10,15 @@ namespace StockService.Infrastructure.Extensions
             this IServiceCollection services, IConfiguration configuration
         )
         {
+            var host = configuration.GetValue<string>("RabbitMQ:Host");
+            var username = configuration.GetValue<string>("RabbitMQ:UserName");
+            var password = configuration.GetValue<string>("RabbitMQ:Password");
+            if (string.IsNullOrEmpty(host) && string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
+            {
+                throw new InvalidOperationException("Conexão do host do RabbitMQ não configurada.");
+            }
             services.AddSingleton<IConnectionFactory>(_ =>
             {
-                var host = configuration.GetValue<string>("RabbitMQ:Host") ?? "rabbitmq";
-                var username = configuration.GetValue<string>("RabbitMQ:UserName") ?? "guest";
-                var password = configuration.GetValue<string>("RabbitMQ:Password") ?? "guest";
                 return new ConnectionFactory()
                 {
                     HostName = host,

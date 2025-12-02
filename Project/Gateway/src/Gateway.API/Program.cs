@@ -1,44 +1,33 @@
+using Gateway.API.Extensions;
+using Gateway.API.Middleware;
+using Gateway.Application.Extension;
+using Microsoft.OpenApi;
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
+builder.Services.AddControllers();
+builder.Services.AddYarpConfig();
+builder.Services.AddSwaggerConfig();
+builder.Services.AddJwtAuthentication(builder.Configuration);
+builder.Services.AddCorsConfig();
+builder.Services.AddHttpClient();
+builder.Services.AddApplicationExtensions();
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.UseCors("AllowAll");
+app.UseSwagger(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
+    options.OpenApiVersion = OpenApiSpecVersion.OpenApi2_0;
+});
+app.UseSwaggerUI(options =>
+{
+    options.SwaggerEndpoint("/swagger/v1/swagger.json","Gateway API");
+    options.SwaggerEndpoint("http://localhost:5001/swagger/v1/swagger.json","Auth API");
+    options.SwaggerEndpoint("http://localhost:5002/swagger/v1/swagger.json","Sale API");
+    options.SwaggerEndpoint("http://localhost:5003/swagger/v1/swagger.json","Stock API");
+});
 app.UseHttpsRedirection();
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast")
-.WithOpenApi();
-
-app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+app.UseRouting();
+app.UseAuthentication();
+app.UseAuthorization();
+app.UseMiddleware<ExceptionMiddleware>();
+app.MapControllers();
+app.MapReverseProxy();
+app.Run("http://+:5000");

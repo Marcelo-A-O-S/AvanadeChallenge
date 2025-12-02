@@ -1,0 +1,16 @@
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\bin\Debug\net8.0\StockService.Application.deps.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\bin\Debug\net8.0\StockService.Application.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\bin\Debug\net8.0\StockService.Application.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\bin\Debug\net8.0\StockService.Domain.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\bin\Debug\net8.0\StockService.Domain.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\StockService.Application.csproj.AssemblyReference.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\StockService.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\StockService.Application.AssemblyInfoInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\StockService.Application.AssemblyInfo.cs
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\StockService.Application.csproj.CoreCompileInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\StockService.Application.sourcelink.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\StockSer.0111C3F9.Up2Date
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\StockService.Application.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\refint\StockService.Application.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\StockService.Application.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\StockService\src\StockService.Application\obj\Debug\net8.0\ref\StockService.Application.dll

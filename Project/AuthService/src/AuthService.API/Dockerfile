@@ -1,13 +1,11 @@
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS Build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY *.csproj .
-RUN dotnet restore
 COPY . .
-RUN dotnet publish -c Release -o /app/publish
-
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS Runtime
+RUN dotnet restore AuthService.API/AuthService.API.csproj
+RUN dotnet publish AuthService.API/AuthService.API.csproj -c Release -o /app/publish
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
-COPY --from=Build /app/publish .
+COPY --from=build /app/publish .
 RUN apt-get update && apt install -y curl
 ENV ASPNETCORE_URLS=http://+:5001
 EXPOSE 5001

@@ -32,15 +32,13 @@ namespace StockService.Infrastructure.Repositories
             return await this.context.Set<T>().ToListAsync();
         }
 
-        public async Task<List<T>> List(int? page)
+        public async Task<List<T>> List(int page = 1, int itemsPage = 10)
         {
             var query = this.context.Set<T>().AsQueryable();
-            var itemsPage = 10;
-            if (page != null)
-            {
-                query = query.Skip(((int)page) * 10).Take(itemsPage);
-            }
-            return await query.ToListAsync();
+            var items = await query.Skip((page - 1) * itemsPage)
+            .Take(itemsPage)
+            .ToListAsync();
+            return items;
         }
 
         public async Task Save(T entity)

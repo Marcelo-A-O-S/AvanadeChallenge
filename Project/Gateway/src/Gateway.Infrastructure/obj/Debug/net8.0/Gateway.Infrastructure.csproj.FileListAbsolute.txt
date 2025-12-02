@@ -1,0 +1,12 @@
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\bin\Debug\net8.0\Gateway.Infrastructure.deps.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\bin\Debug\net8.0\Gateway.Infrastructure.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\bin\Debug\net8.0\Gateway.Infrastructure.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\obj\Debug\net8.0\Gateway.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\obj\Debug\net8.0\Gateway.Infrastructure.AssemblyInfoInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\obj\Debug\net8.0\Gateway.Infrastructure.AssemblyInfo.cs
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\obj\Debug\net8.0\Gateway.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\obj\Debug\net8.0\Gateway.Infrastructure.sourcelink.json
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\obj\Debug\net8.0\Gateway.Infrastructure.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\obj\Debug\net8.0\refint\Gateway.Infrastructure.dll
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\obj\Debug\net8.0\Gateway.Infrastructure.pdb
+D:\Projetos\trilha-net-desafio-tecnico\Project\Gateway\src\Gateway.Infrastructure\obj\Debug\net8.0\ref\Gateway.Infrastructure.dll

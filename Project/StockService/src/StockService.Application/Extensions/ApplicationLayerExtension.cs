@@ -8,6 +8,7 @@ namespace StockService.Application.Extensions
             this IServiceCollection services
         )
         {
+            services.AddDependencyInjections();
             return services;
         }
     }

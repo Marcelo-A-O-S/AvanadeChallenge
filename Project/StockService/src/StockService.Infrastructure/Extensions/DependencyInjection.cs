@@ -2,6 +2,7 @@ using Microsoft.Extensions.DependencyInjection;
 using StockService.Domain.Entities;
 using StockService.Domain.Interfaces;
 using StockService.Infrastructure.Repositories;
+using StockService.Infrastructure.Workers;
 
 namespace StockService.Infrastructure.Extensions
 {
@@ -17,6 +18,8 @@ namespace StockService.Infrastructure.Extensions
             //Repositories
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IStockMovementRepository, StockMovementRepository>();
+
+            services.AddSingleton<IRabbitMQProducer, RabbitMQProducer>();
             return services;
         }
     }

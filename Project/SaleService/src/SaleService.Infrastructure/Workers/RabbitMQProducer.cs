@@ -18,7 +18,7 @@ namespace SaleService.Infrastructure.Workers
             using var channel = await connection.CreateChannelAsync();
             await channel.ExchangeDeclareAsync(exchange: eventName, type: ExchangeType.Fanout, durable: true);
             var body = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(data));
-            await channel.BasicPublishAsync(exchange: eventName, routingKey: eventName, body: body);
+            await channel.BasicPublishAsync(exchange: eventName, routingKey: "", body: body);
         }
     }
 }

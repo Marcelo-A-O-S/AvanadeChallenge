@@ -8,7 +8,7 @@ namespace StockService.Application.Extensions
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddDependencyInjection(
+        public static IServiceCollection AddDependencyInjections(
             this IServiceCollection services
         )
         {

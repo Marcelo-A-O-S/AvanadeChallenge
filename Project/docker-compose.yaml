@@ -62,8 +62,8 @@ services:
         restart: unless-stopped
     stockservice:
         build:
-            context: ./StockService/src/StockService.API
-            dockerfile: Dockerfile
+            context: ./StockService/src
+            dockerfile: ./StockService.API/Dockerfile
         container_name: stockservice
         image: stockservice:1.0
         ports:
@@ -72,7 +72,7 @@ services:
             rabbitmq:
                 condition: service_healthy
             db-stock:
-                condition: service-healthy
+                condition: service_healthy
         healthcheck:
             test: ["CMD-SHELL", "curl -f http://localhost:5003/api/health || Exit 1"]
             interval: 30s
@@ -81,8 +81,8 @@ services:
         restart: unless-stopped
     saleservice:
         build: 
-            context: ./SaleService/src/SaleService.API
-            dockerfile: Dockerfile
+            context: ./SaleService/src
+            dockerfile: ./SaleService.API/Dockerfile
         container_name: saleservice
         image: saleservice:1.0
         ports:
@@ -102,8 +102,8 @@ services:
         restart: unless-stopped
     authservice:
         build: 
-            context: ./AuthService/src/AuthService.API
-            dockerfile: Dockerfile
+            context: ./AuthService/src
+            dockerfile: ./AuthService.API/Dockerfile
         container_name: authservice
         image: authservice:1.0
         ports:
@@ -121,8 +121,8 @@ services:
         restart: unless-stopped
     apigateway:
         build: 
-            context: ./Gateway/src/Gateway.API
-            dockerfile: Dockerfile
+            context: ./Gateway/src
+            dockerfile: ./Gateway.API/Dockerfile
         container_name: apigateway
         image: apigateway:1.0
         ports:
@@ -135,8 +135,9 @@ services:
             authservice:
                 condition: service_healthy
         healthcheck:
-            test: ["CMD-SHELL", "curl -f http:localhost:5000/api/health || Exit 1"]
+            test: ["CMD-SHELL", "curl -f http://localhost:5000/api/health || exit 1"]
             interval: 30s
             timeout: 10s
             retries: 5
+            start_period: 40s
         restart: unless-stopped

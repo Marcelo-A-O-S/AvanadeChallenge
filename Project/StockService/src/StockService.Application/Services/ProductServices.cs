@@ -26,12 +26,37 @@ namespace StockService.Application.Services
             return await this.productRepository.GetById(Id);
         }
 
+        public async Task<List<Product>> GetByIds(List<long> ids)
+        {
+            return await this.productRepository.GetByIds(ids);
+        }
+
+        public async Task<Product> GetByName(string name)
+        {
+            return await this.productRepository.GetByName(name);
+        }
+
+        public async Task<List<Product>> GetProductsWithStock()
+        {
+            return await this.productRepository.GetProductsWithStock();
+        }
+
+        public async Task<List<Product>> GetProductsWithStock(int page = 1, int itemsPage = 10)
+        {
+            return await this.productRepository.GetProductsWithStock(page, itemsPage);
+        }
+
+        public async Task<int> GetQuantity()
+        {
+            return await this.productRepository.GetQuantity();
+        }
+
         public async Task<List<Product>> List()
         {
             return await this.productRepository.List();
         }
 
-        public async Task<List<Product>> List(int? page)
+        public async Task<List<Product>> List(int page)
         {
             return await this.productRepository.List(page);
         }

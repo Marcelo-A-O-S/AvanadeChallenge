@@ -9,6 +9,7 @@ namespace StockService.Domain.Interfaces
         Task<T> FindBy(Expression<Func<T, bool>> predicate);
         Task<T> GetById(long Id);
         Task<List<T>> List();
-        Task<List<T>> List(int? page);
+        Task<List<T>> List(int page = 1, int itemsPage = 10);
+        
     }
 }
