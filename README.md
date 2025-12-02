@@ -4,6 +4,11 @@ Sistema de e-commerce com arquitetura de microserviços para gerenciamento de es
 
 Esta solução foi desenvolvida como parte de um desafio técnico da Avanade, e demonstra conhecimentos em backend, frontend, orquestração de serviços, autenticação, banco de dados e comunicação entre serviços.
 
+## 🖥 Apresentação
+
+<img width="1851" height="939" alt="image" src="https://github.com/user-attachments/assets/fe97972e-3339-42b9-b485-9f2b31e274ed" />
+
+
 ## ✨ Funcionalidades principais
 
 - Cadastro, atualização e listagem de produtos.  
