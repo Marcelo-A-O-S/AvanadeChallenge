@@ -44,6 +44,7 @@ namespace SaleService.Infrastructure.Messaging.Consumers
                     {
                         order.Status = OrderStatus.REJECT;
                         await orderRepository.Update(order);
+                        this.logger.LogInformation("Pedido rejeitado");
                     }
                     else
                     {
@@ -148,7 +149,12 @@ namespace SaleService.Infrastructure.Messaging.Consumers
                 var stockMessage = JsonSerializer.Deserialize<StockResponseMessage>(message);
                 if (stockMessage != null)
                 {
-                    var sale = await saleRepository.GetById(stockMessage.SaleId);
+                    if (stockMessage.SaleId == null)
+                    {
+                        this.logger.LogWarning("SaleId veio null na mensagem");
+                        return;
+                    }
+                    var sale = await saleRepository.GetById(stockMessage.SaleId.Value);
                     if (sale != null)
                     {
                         if(stockMessage.Status == OrderStatus.NOT_FOUND_PRODUCT.ToString())
@@ -184,7 +190,12 @@ namespace SaleService.Infrastructure.Messaging.Consumers
                 var stockMessage = JsonSerializer.Deserialize<StockResponseMessage>(message);
                 if (stockMessage != null)
                 {
-                    var sale = await saleRepository.GetById(stockMessage.SaleId);
+                    if (stockMessage.SaleId == null)
+                    {
+                        this.logger.LogWarning("SaleId veio null na mensagem");
+                        return;
+                    }
+                    var sale = await saleRepository.GetById(stockMessage.SaleId.Value);
                     if (sale != null)
                     {
                         this.logger.LogInformation($"Pedido processado com sucesso o Id: ${stockMessage.OrderId}");

@@ -38,6 +38,7 @@ namespace StockService.Infrastructure.Messaging.Consumers
                 var order = JsonSerializer.Deserialize<OrderMessage>(message);
                 if (order != null)
                 {
+                    this.logger.LogInformation($"Pedido recebido para processamento: ${order.Id}");
                     var invalidSale = new List<long>();
                     foreach (var sale in order.Sales)
                     {
@@ -86,6 +87,7 @@ namespace StockService.Infrastructure.Messaging.Consumers
                         this.logger.LogInformation("Produto atualizado com sucesso");
                         await this.rabbitMQProducer.Publish("order-sale-valid", new StockResponseMessage
                         {
+                            OrderId = order.Id,
                             SaleId = sale.Id,
                             Status = OrderStatusResponse.CONFIRMED.ToString(),
                             Message = "Venda realizada com sucesso"

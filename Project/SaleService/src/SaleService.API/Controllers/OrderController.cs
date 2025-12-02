@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SaleService.Application.DTOs.Message;
 using SaleService.Application.DTOs.Requests;
+using SaleService.Application.DTOs.Responses;
 using SaleService.Application.Interfaces;
 using SaleService.Domain.Entities;
 using SaleService.Domain.Enums;
@@ -106,7 +107,21 @@ namespace SaleService.API.Controllers
         public async Task<IActionResult> GetAllByUserId([FromQuery] long userId,[FromQuery] int page = 1, int itemsPage = 10)
         {
             var orders = await this.orderServices.GetAllByUserId(userId,page,itemsPage);
-            return Ok(orders);
+            var orderResponse = orders.Select(o=> new OrderResponse
+            {
+                Id = o.Id,
+                UserId = o.UserId,
+                Status = o.Status.ToString(),
+                CreatedAt = o.CreatedAt,
+                Sales = o.Sales.Select(s=> new SaleResponse
+                {
+                    ProductId = s.ProductId,
+                    Quantity = s.Quantity,
+                    UnitPrice = s.UnitPrice,
+                    UserId = s.UserId
+                }).ToList()   
+            }).ToList();
+            return Ok(orderResponse);
         }
         [HttpPost]
         [Authorize(Roles = "Administrador,Client")]
@@ -147,7 +162,7 @@ namespace SaleService.API.Controllers
                             ProductId = x.ProductId,
                             Quantity = x.Quantity,
                             UnitPrice = x.UnitPrice,
-                            Status = SaleStatus.PROCESSING.ToString()
+                            Status = x.Status.ToString()
                         }).ToList(),
                     Status = order.Status.ToString(),
                 });

@@ -16,7 +16,9 @@ namespace SaleService.Infrastructure.Repositories
         public async Task<List<Order>> GetAllByUserId(long userId, int page = 1, int itemsPage = 10)
         {
             var query = this.context.Orders.AsQueryable();
-            var items = await query.Where(o=> o.UserId == userId).Skip((page - 1) * itemsPage)
+            var items = await query.Where(o=> o.UserId == userId)
+            .Include(o => o.Sales)
+            .Skip((page - 1) * itemsPage)
             .Take(itemsPage)
             .ToListAsync();
             return items;

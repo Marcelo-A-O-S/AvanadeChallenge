@@ -28,6 +28,6 @@ export const getOrdersServices = async() =>{
 }
 export const getOrdersAllByUserId = async(userId: number, page: number) =>{
     const api = await apiServer();
-    const response = await api.get(`/api/order?userId=${userId}&page=${page}`);
+    const response = await api.get(`/api/order/GetAllByUserId?userId=${userId}&page=${page}`);
     return response;
 }

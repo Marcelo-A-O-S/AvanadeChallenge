@@ -43,7 +43,6 @@ export default function DashboadClient() {
                     console.log(responseUsers.data);
                     return;
                 }
-                console.log("Users: ",responseUsers.data);
                 setCountUsers(responseUsers.data);
                 const responseMovements = await getStockMovementQuantity();
                 if(responseMovements.status !== 200 && responseMovements.status !== 201){
@@ -57,7 +56,6 @@ export default function DashboadClient() {
                     console.log(responseUser.data);
                     return;
                 }
-                console.log(responseUser.data);
                 const responseSale = await getSalesQuantityByUserId(responseUser.data.id);
                 if(responseSale.status !== 200 && responseSale.status !== 201){
                     console.log(responseSale.data);
