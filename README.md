@@ -49,7 +49,7 @@ D:\AvanadeChallenge\
 - [X] Banco de dados PostgreSQL + dockerização  
 - [X] Frontend consumindo APIs e interface básica de e-commerce  
 - [X] Autenticação via JWT    
-- [X] Documentação de APIs (ex: swagger / open-api) — opcional mas recomendado  
+- [X] Documentação de APIs   
 
 ## 🎯 Objetivo do Projeto
 
